@@ -1,0 +1,100 @@
+header {
+  background: #fff;
+  box-shadow: 0px 4px 32px 0px rgba(0, 16, 61, 0.16);
+  padding-top: 13px;
+  padding-bottom: 13px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      .nav-link {
+        transition: 0.3s;
+        color: var(--color-text, #2c2d2e);
+        // font-feature-settings: "clig" off, "liga" off;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        &:hover {
+          color: var(--color-primary, #ef7c00);
+        }
+      }
+      .line {
+        background: rgba(0, 16, 61, 0.12);
+        width: 1px;
+        height: 28px;
+      }
+    }
+    .toggle {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      .nav-link {
+        transition: 0.3s;
+        color: var(--color-text, #2c2d2e);
+        // font-feature-settings: "clig" off, "liga" off;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        &:hover {
+          color: var(--color-primary, #ef7c00);
+        }
+      }
+      .line {
+        background: rgba(0, 16, 61, 0.12);
+        width: 1px;
+        height: 28px;
+      }
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+      .dark-btn {
+        background: transparent;
+      }
+      .menu-btn {
+        background: transparent;
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .menu-btn {
+    display: block !important;
+  }
+  .line {
+    display: none;
+  }
+  header {
+    position: relative;
+    position: fixed;
+  }
+  .nav-links {
+    position: absolute;
+    // padding: 0px !important;
+    box-shadow: 0px 2px 0px 0px rgba(0, 16, 61, 0.16);
+    top: 70px;
+    left: 0%;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    z-index: 9;
+    width: 100%;
+  }
+  .toggle {
+    display: none !important;
+  }
+}

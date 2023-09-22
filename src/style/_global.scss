@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1175px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.dark .about {
+  background: #404040 !important;
+}
+.dark .certificates,
+.dark .products,
+.dark header,
+.dark footer,
+.dark .team,
+.dark .news,
+.dark .information {
+  background: #404040 !important;
+}
+.dark .about p,
+.dark .certificates p,
+.dark .team p,
+.dark footer p,
+.dark header a,
+.dark header .line,
+.dark .news p,
+.dark .products p {
+  color: white !important;
+}
+.dark header .line {
+  background-color: white !important;
+}
+.dark header .dark-icon {
+  fill: white;
+}
+.dark header .menu-icon {
+  fill: white;
+}
+.backtop {
+  position: absolute;
+  top: 80%;
+  right: 15px;
+  position: fixed;
+}

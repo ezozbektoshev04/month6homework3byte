@@ -1,0 +1,99 @@
+footer {
+  background-color: var(--color-bg-secondary, rgba(0, 16, 61, 0.06));
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .footer-content {
+    .d1 {
+      padding-bottom: 46px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .line2 {
+      max-width: 1134px;
+      height: 1px;
+      background: #919399;
+      display: block;
+    }
+    .d2 {
+      padding-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 10px;
+      .d3 {
+        display: flex;
+        align-items: center;
+        column-gap: 55px;
+        .d4 {
+          .p1 {
+            color: var(--color-text, #2c2d2e);
+            padding-bottom: 24px;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; /* 116.667% */
+          }
+          .p2 {
+            color: var(--color-text, #2c2d2e);
+            padding-bottom: 12px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+          }
+        }
+      }
+    }
+    .d5 {
+      .d6 {
+        display: flex;
+        column-gap: 55px;
+        padding-bottom: 24px;
+        .d7 {
+          .p3 {
+            color: var(--color-primary, #ef7c00);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+          }
+          .p4 {
+            color: var(--color-text, #2c2d2e);
+            font-feature-settings: "clig" off, "liga" off;
+            padding-top: 12px;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 133.333% */
+          }
+        }
+      }
+    }
+    .con {
+      .p5 {
+        color: var(--color-text-secondary, #919399);
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 13px; /* 100% */
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .d2 {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 570px) {
+  .d3 {
+    flex-direction: column;
+  }
+  .d6 {
+    flex-direction: column;
+  }
+}

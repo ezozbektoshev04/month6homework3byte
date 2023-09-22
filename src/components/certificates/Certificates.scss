@@ -1,0 +1,21 @@
+.certificates {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .p1 {
+    padding-bottom: 32px;
+    color: #2c2d2e;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    .sp1 {
+      color: #ef7c00;
+    }
+  }
+  .d1 {
+    display: flex !important;
+    column-gap: 14px;
+    padding-bottom: 8px;
+  }
+}

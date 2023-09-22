@@ -1,0 +1,87 @@
+.products {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .products-content {
+    .d1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .p1 {
+        color: #2c2d2e;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 125% */
+        .sp1 {
+          color: #ef7c00;
+        }
+      }
+      .product-btns {
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 24px;
+        padding-bottom: 48px;
+        .btn2 {
+          background: transparent;
+          transition: 0.5s;
+          border-radius: 61px;
+          border: 1px solid var(--color-border, rgba(0, 16, 61, 0.12));
+          padding: 10px 20px;
+          color: var(--color-primary, #ef7c00);
+          text-align: center;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 13px; /* 100% */
+          &:hover {
+            border-radius: 61px;
+            background: #ef7c00;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .d2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 30px;
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+    .pro-btn {
+      padding-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .btn3 {
+        transition: 0.5s;
+        padding: 10px 20px;
+        background: transparent;
+        color: var(--color-primary, #ef7c00);
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 133.333% */
+        border-radius: 4px;
+        border: 1px solid #ef7c00;
+        &:hover {
+          //   border-radius: 61px;
+          background: #ef7c00;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .d2 {
+    row-gap: 30px;
+  }
+}
